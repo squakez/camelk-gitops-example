@@ -5,7 +5,7 @@ resources:
 configMapGenerator:
 - behavior: replace
   literals:
-  - my-configmap-file=I am a production environment
+  - my-configmap-file=I am a production environment [edited!]
   name: my-cm
 namespace: prod
 patches:
