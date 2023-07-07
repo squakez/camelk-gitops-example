@@ -1,0 +1,8 @@
+- from:
+    uri: "timer:yaml"
+    parameters:
+      period: "1000"
+    steps:
+      - setBody:
+          simple: resource:classpath:my-configmap-file
+      - to: "log:info"

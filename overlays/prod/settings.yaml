@@ -1,0 +1,12 @@
+apiVersion: camel.apache.org/v1
+kind: Integration
+metadata:
+  annotations:
+    camel.apache.org/operator.id:
+  name: my-route
+spec:
+  traits:
+    container:
+      image: 10.110.251.124/default/camel-k-kit-cijrbp8vl1rc73dg99h0@sha256:038254c5c3d627eb230a1df2d6a140fb54d704f7d14443396e7273ee53d2ce3e
+      limitCPU: "1"
+      limitMemory: 1024Mi
